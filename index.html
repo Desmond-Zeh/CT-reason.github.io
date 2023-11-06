@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang ="en-UK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+            content="width=device-width">
+<meta name="author"
+         content="Desmond Zeh">
+<meta name ="Description"
+             content="Leaving the secondary terminals of a CT open is a terrible idea. This content is all about why we shouldn't leave the secondary terminals of our CT open.">
+<title>Current transformers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&family=Lisu+Bosa:ital@1&family=Old+Standard+TT:ital@1&display=swap"
+	rel="stylesheet">
+<link href="style.css" 
+	rel="stylesheet" >
+</head>
+<body>
+<header>
+	<h1>
+	<strong>Reason why the secondary terminals of a CT shouldn't be left open</strong>
+</h1>
+</header>
+<!--My main navigation items-->
+	<nav>
+		<ul>
+			<li id="home"><a href="#">Home</a></li>
+                         <li id = "down"><a href="#">Downloads</a></li>
+			<li id = "about"><a href="#">About</a></li>
+			<li id = "project"><a href="#">Project</a></li>
+			<li id="myDoc"><a href="#">Documents</a></li>
+		</ul>
+	<form>
+		<input type="search" name='q' placeholder="search query">
+		<input type="submit" value="Valid">
+	</form>
+	</nav>
+	<!--This is my main program-->
+	<main>
+		<article>
+<dl>
+<dt>Current transformer</dt>
+<dd>A current trasnformer is a current step down, voltage step up device used  to scale down larger values of currents to smaller values that can be handled by protective relays, and energy meters.</dd>
+</dt>
+</dl>
+<p> A current transformer under normal working conditions will produce a varying current of 1A-to-5A and a very low voltage across its secondary winding due to a very small secondary winding and load impedance, as current passing through its primary winding. This means that a current transformer rated 100/5A will produce a current of about 5A when the current passing through its primary winding is about 100A. This 5A current will only be receive if the secondary terminals of the CT are not left open. Assuming the secondary terminals of the CT were left open, then no current will flow due to a very high impedance across the secondary open terminals, and this will lead to a very high voltage across this open terminal. This voltage is extremely dangerious to the life of personels working in the vicinity of the said CT. This point will even be more clearer if we look at the example below:</p>
+<p> Consider a CT rated 100/5A installed on the current carrying conductor of a three phase load drawing a current of 95A at 380V-50Hz. The secondary terminals (S1 and S2) of the CT are connected to an ammeter with an internal resistance of 0.2Ω. Calculate the total voltage drop across the ammeter under normal working conditions, when the load is drawing a current of 90A. Also calculate the voltage drop across the secondary terminals of the current transformer under abnormal conditions. When the load is drawing the same 90A current, but with the ammeter disconnected. Consider tha the CT is having a turn ratio of 20:1</p>
+<ol>
+<li>Under normal working conditions</br>
+First, let's determine the current flowing across the secondary terminals of the CT when the current across its primary is 90A.</br>
+Our current transformer is rated 100/5A. This gives us a current ratio of 20A. As a result, the current flowing to the ammeter at a primary current of 90A is expressed as;</br>
+<strong>I = 90A/20</strong></br>
+<strong>I = 4.5A</strong></br>
+Now, we determine the voltage across the ammeter knowing that voltage is expressed as;</br>
+</strong>U<sub>d</sub> = IR</strong></br>
+U<sub>d</sub> = 4.5x0.2</br>
+<strong>U<sub>d</sub> = 0.9V</strong></br>
+Since the ammeter is connected in series with the CT with its internal resistance connected in parallel with the secondary winding, this means that they share the same voltage drop.</br>
+ <strong>U<sub>s</sub> = 0.9V </strong></li>
+<li>Under abnormal condition.</br>
+The CT has a turn ratio of 20:1. This means that:</br>
+Primary turn N<sub>p</sub> = 1</br>
+Secondary turn N<sub>s</sub> = 20</br>
+The CT is installed on the current carrying conductor of a three phase load, with a line voltage of 380V-50Hz. Since the primary circuit of a current transformer is independent of the secondary circuit, any change across the secondary voltage will have no influence on the primary voltage. As a result, under abnormal condition across the secondary winding, the primary voltage will still be 380V-50Hz.</br>
+U<sub>p</sub> = 380V</br>
+From the transformer transformation ratio formula, which states that;</br>
+<strong>U<sub>s</sub>/U<sub>p</sub> =  N<sub>s</sub>/N<sub>p</sub> = I<sub>p</sub>/I<sub>s</sub></strong>,</br>
+and with the secondary current equal to zero as the result of opened terminals, we can deduce the secondary open circuit voltage (<strong>U<sub>s</sub></strong>) as;</br>
+<strong>U<sub>s</sub> = U<sub>p</sub>(N<sub>s</sub>/N<sub>p</sub>)</strong></br>
+ U<sub>s</sub> = 380 (20/1)</br>
+<strong>U<sub>s</sub> = 7.6kV</strong></br>
+</li>
+</ol>
+<p><strong>Conclusion</strong></p>
+<p> From the above example, it is clear that the open circuit voltage of a current transformer is extremely fatal, while its load voltage is relatively very small with respect to the load connected to the CT. For this reason, it is worth mentioning that the secondary terminals of a current transformer should never be left open, to avoid dangerious high voltage across this opened terminals as explained above.</p>
+
+</article>
+</main>
+
+<script src="main.js" differ></script>
+<!---My google translator code-->
+  <div id="google_translate_element"></div>
+	
+	<script type="text/javascript" >
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement(
+				{pageLanguage: 'en'},
+				'google_translate_element'
+			);
+		}
+	</script>
+	
+	<script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+		cb=googleTranslateElementInit">
+	</script>
+	
+	<!--My main footer item-->
+	<footer>
+		<p>Don't <strong>judge</strong> each day by the <strong>harvest</strong> that you made, but by the <strong>seeds</strong> that you <strong>sold</strong>.</p>
+	</footer>
+</body>
+</html>
